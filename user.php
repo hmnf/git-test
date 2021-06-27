@@ -3,8 +3,8 @@
 Class User{
     public string $name;
 
-    public function __construct(string $dbname)
+    public function __construct(string $name)
     {
-        $this->dbname = $dbname;
+        $this->name = $name;
     }
 }
