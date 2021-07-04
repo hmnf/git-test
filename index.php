@@ -11,7 +11,7 @@ function assertArrays(array $a, array $b){
             }
         }
         return true;
-    }{
+    }else{
         return false;
     }
 }
