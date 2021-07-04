@@ -1,6 +1,6 @@
 <?php
 
 class AppGenerator{
-  public string $phone;
-  public string $key;
+    public int $number;
+    public array $result;
 }
