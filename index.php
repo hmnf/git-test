@@ -11,10 +11,17 @@ if(count($a) > count($b)){
     $kolvo = count($a);
 }
 
+$error = null;
+
 for($i = 0; $i < $kolvo; $i++){
-    if($a[$i] === $b[$i]){
-        echo "$a[$i] и $b[$i] одинаковые<br>";
-    }else{
-        echo "$a[$i] и $b[$i] разные<br>";
+    if($a[$i] !== $b[$i]){
+        $error = true;
+        $break;
     }
+}
+
+if($error){
+    echo 'разные';
+}else{
+    echo 'одинаковые';
 }
