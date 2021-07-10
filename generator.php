@@ -6,4 +6,9 @@ class AppGenerator{
   public string $pass;
   public int $summ;
   public int $num;
+  
+  public function test()
+  {
+
+  }
 }
